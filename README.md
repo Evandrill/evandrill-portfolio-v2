@@ -57,7 +57,29 @@ src/
 
 ## Déploiement
 
-Le projet est optimisé pour un déploiement sur [Vercel](https://vercel.com). Il suffit d'importer le dépôt : le framework Next.js est détecté automatiquement.
+### Option 1 — Intégration GitHub Vercel (recommandée)
+
+1. Connectez-vous : `pnpm exec vercel login`
+2. Liez le projet : `pnpm exec vercel link`
+3. Premier déploiement : `pnpm deploy`
+4. Activez le déploiement automatique : `pnpm vercel:connect`
+
+Chaque `git push` sur `main` déclenchera alors un nouveau déploiement.
+
+### Option 2 — GitHub Actions
+
+Le workflow `.github/workflows/vercel-deploy.yml` déploie automatiquement sur `main`.
+Ajoutez ces secrets dans les paramètres du dépôt GitHub :
+
+| Secret | Où le trouver |
+|--------|---------------|
+| `VERCEL_TOKEN` | [vercel.com/account/tokens](https://vercel.com/account/tokens) |
+| `VERCEL_ORG_ID` | Fichier `.vercel/project.json` après `vercel link` |
+| `VERCEL_PROJECT_ID` | Fichier `.vercel/project.json` après `vercel link` |
+
+### Hébergement
+
+Le projet est optimisé pour [Vercel](https://vercel.com) : framework Next.js détecté automatiquement.
 
 ---
 

@@ -1,5 +1,6 @@
 ﻿"use client";
 
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { Reveal } from "@/components/ui/reveal";
@@ -78,8 +79,16 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.15} className="space-y-10 lg:col-span-5">
-          <div className="aspect-video overflow-hidden border border-white/5 bg-surface-low">
-            <div className="h-full w-full bg-gradient-to-br from-primary/30 via-surface-high to-background transition-transform duration-700 hover:scale-105" />
+          <div className="group relative aspect-video overflow-hidden border border-white/5 bg-surface-low">
+            <Image
+              src="/contact-portrait.png"
+              alt={`Portrait de ${profile.name}`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover object-[center_85%] grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent mix-blend-overlay" />
+            <div className="absolute inset-0 bg-gradient-to-t from-surface/60 via-transparent to-transparent" />
           </div>
 
           <div className="space-y-6">

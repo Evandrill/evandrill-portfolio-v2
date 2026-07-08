@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Bikele Messanga Junior Lamour
 
-## Getting Started
+Portfolio personnel (one-pager) de **Bikele Messanga Junior Lamour**, ingénieur Fullstack & IA basé à Yaoundé, Cameroun.
 
-First, run the development server:
+Le site présente un parcours orienté impact autour de la Computer Vision, du backend Python/FastAPI et des interfaces web modernes (Next.js/React), avec des réalisations en contextes industriels, événementiels, ERP et applications mobiles.
+
+## Aperçu
+
+Application web construite avec un design system « Nocturne Noir / Dark Tech » :
+
+- Noir OLED `#0a0a0a`, rouge accent `#991b1b`
+- Typographies Newsreader (serif), Geist (sans) et JetBrains Mono
+- Overlay de grain, angles nets, animations au défilement
+- Grille de projets en bento avec modale d'étude de cas détaillée
+
+## Stack technique
+
+- **Framework** : Next.js 16 (App Router)
+- **UI** : Tailwind CSS v4, shadcn/ui
+- **Animations** : Framer Motion
+- **Langage** : TypeScript
+- **Gestionnaire de paquets** : pnpm
+
+## Démarrage en local
+
+Installer les dépendances puis lancer le serveur de développement :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000) dans le navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Commande | Description |
+|----------|-------------|
+| `pnpm dev` | Serveur de développement |
+| `pnpm build` | Build de production |
+| `pnpm start` | Démarrage du build de production |
+| `pnpm lint` | Analyse ESLint |
 
-## Learn More
+## Structure du projet
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                  # App Router, layout, styles globaux
+├── components/
+│   ├── layout/           # En-tête, pied de page, overlay de grain
+│   ├── projects/         # Cartes projets et modale d'étude de cas
+│   ├── sections/         # Hero, À propos, Stack, Projets, Contact
+│   └── ui/               # Composants shadcn/ui
+├── data/                 # Profil et données des projets
+└── lib/                  # Utilitaires et visuels des projets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Le projet est optimisé pour un déploiement sur [Vercel](https://vercel.com). Il suffit d'importer le dépôt : le framework Next.js est détecté automatiquement.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Conçu et développé par Bikele Messanga Junior Lamour.

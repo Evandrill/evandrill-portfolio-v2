@@ -25,21 +25,21 @@ export const projects: ProjectNarrative[] = [
     layout: "hero",
     confidential: true,
     confidentialReason:
-      "Projet réalisé pour Mira en site industriel — flux caméra, données de production et interfaces non publiables (confidentialité client et sécurité du site).",
+      "Projet réalisé pour Mira en site industriel : flux caméra, données de production et interfaces de suivi restent non publiables pour des raisons de confidentialité client et de sécurité du site.",
     problem:
-      "Comptage manuel imprécis des sacs de ciment dans un environnement industriel à fort volume.",
-    users: "Opérateurs de production et équipes de supervision industrielle.",
+      "Le comptage des sacs de ciment devait être fiabilisé dans un environnement industriel surveillé par caméras, avec le risque de confondre les objets présents dans le flux.",
+    users: "Opérateurs de production, équipes de supervision et responsables de suivi industriel.",
     impact:
-      "Automatisation du comptage en temps réel avec tableau de bord et suivi caméra HikVision. [À COMPLÉTER: gain mesurable]",
+      "Le projet automatise le comptage en temps réel et centralise le suivi dans un tableau de bord connecté aux caméras HikVision. [À COMPLÉTER: gain mesurable]",
     constraints:
-      "Ne compter que les sacs de l’entreprise dans un flux visuel bruité multi-objets.",
+      "Le modèle devait distinguer uniquement les sacs de l’entreprise dans des scènes industrielles visuellement chargées.",
     contribution:
-      "Développement backend, tests, intégration IA de détection/comptage et déploiement Docker.",
+      "J’ai contribué au backend, aux tests, à l’intégration du modèle de détection/comptage et au déploiement automatisé avec Docker.",
     stack: ["Node.js", "Python", "Next.js", "PostgreSQL", "SQLite", "Docker"],
     challenges:
-      "Calibration du modèle IA sur conditions réelles et réduction des faux positifs.",
+      "Le principal défi était de calibrer l’IA sur des conditions caméra réelles tout en réduisant les faux positifs.",
     lessons:
-      "Importance de la boucle terrain (annotation, tests caméra, itérations rapides) pour la fiabilité industrielle.",
+      "Ce projet confirme qu’en vision industrielle, la fiabilité vient d’une boucle terrain courte : annotation, essais caméra et itérations ciblées.",
   },
   {
     slug: "lynxvision",
@@ -48,21 +48,21 @@ export const projects: ProjectNarrative[] = [
     layout: "tall",
     confidential: true,
     confidentialReason:
-      "Projet réalisé pour Mira en site industriel — modèles de détection, preuves et flux multi-caméras HikVision non diffusables (NDA / sécurité opérationnelle).",
+      "Projet réalisé pour Mira en site industriel : modèles de détection, preuves et flux multi-caméras HikVision ne sont pas diffusables pour des raisons de NDA et de sécurité opérationnelle.",
     problem:
-      "Besoin de détection proactive de menaces en environnement industriel multi-caméras.",
-    users: "Équipes sécurité et supervision de sites industriels.",
+      "Les équipes devaient détecter plus tôt les menaces potentielles dans un environnement industriel suivi par plusieurs caméras.",
+    users: "Équipes de sécurité, opérateurs de supervision et responsables de sites industriels.",
     impact:
-      "Détection en temps réel des émotions, formes humaines et armes blanches avec gestion de preuves. [À COMPLÉTER: KPI]",
+      "La solution regroupe détection en temps réel des émotions, formes humaines et armes blanches, avec gestion des preuves. [À COMPLÉTER: KPI]",
     constraints:
-      "Traitement temps réel avec suivi 3D et architecture multi-caméras HikVision.",
+      "L’architecture devait maintenir un suivi temps réel, 3D et multi-caméras sur des flux HikVision.",
     contribution:
-      "Conception backend/IA, orchestration des flux et interface de suivi.",
+      "J’ai travaillé sur la partie IA, le backend, l’orchestration des flux et les interfaces de suivi.",
     stack: ["Node.js", "Python", "ConvNeXt", "Next.js", "PostgreSQL", "SQLite"],
     challenges:
-      "Concilier précision de détection et latence opérationnelle.",
+      "Le défi central consistait à préserver la précision de détection sans introduire une latence incompatible avec l’usage terrain.",
     lessons:
-      "Pipeline CV modulaire + base de menaces structurée = meilleure maintenabilité.",
+      "Une base de menaces structurée et un pipeline computer vision modulaire rendent ce type de système plus maintenable.",
   },
   {
     slug: "fleetvision",
@@ -71,21 +71,21 @@ export const projects: ProjectNarrative[] = [
     layout: "square",
     confidential: true,
     confidentialReason:
-      "Projet réalisé pour Mira en site industriel — traçabilité véhicules et données ANPR non publiables (confidentialité client et sûreté des accès).",
+      "Projet réalisé pour Mira en site industriel : données de traçabilité, flux ANPR et informations d’accès véhicules restent confidentiels pour protéger le client et la sûreté du site.",
     problem:
-      "Détournement et non-retour de véhicules dans un contexte industriel.",
-    users: "Responsables flotte, sécurité et direction des opérations.",
+      "L’entreprise devait mieux suivre les entrées et sorties de véhicules, notamment pour prévenir les détournements et les non-retours.",
+    users: "Responsables de flotte, équipes de sécurité et direction des opérations.",
     impact:
-      "Traçabilité entrées/sorties via identification multi-critères (plaque, châssis, forme, couleur). [À COMPLÉTER: réduction incidents]",
+      "La traçabilité repose sur une identification multi-critères : plaque, numéro de châssis, forme et couleur du véhicule. [À COMPLÉTER: réduction incidents]",
     constraints:
-      "Fiabiliser l’identification au-delà de la plaque ANPR seule.",
+      "L’identification devait rester fiable même lorsque la plaque seule ne suffisait pas.",
     contribution:
-      "Implémentation logique métier de traçabilité et intégration IA+ANPR.",
+      "J’ai contribué à la logique de traçabilité et à l’intégration entre reconnaissance véhicule, ANPR, suivi 3D et multi-caméras.",
     stack: ["Node.js", "Python", "ANPR", "Next.js", "PostgreSQL", "SQLite"],
     challenges:
-      "Fusion de signaux hétérogènes pour éviter collisions d’identités véhicules.",
+      "Le point sensible était la fusion de plusieurs signaux visuels pour éviter les collisions d’identité entre véhicules.",
     lessons:
-      "Les systèmes de sûreté gagnent en robustesse avec des identifiants composites.",
+      "Les systèmes de sûreté deviennent plus robustes lorsqu’ils combinent plusieurs identifiants plutôt que de dépendre d’un seul signal.",
   },
   {
     slug: "gestion-acces-oit",
@@ -93,20 +93,20 @@ export const projects: ProjectNarrative[] = [
     category: "Sécurité événementielle",
     layout: "wide",
     problem:
-      "Contrôler les accès par zones et niveaux pour la conférence ministérielle de l’OIT organisée au Cameroun en mars.",
+      "La conférence ministérielle de l’OIT organisée au Cameroun en mars nécessitait un contrôle des accès par zones et niveaux d’autorisation.",
     users:
-      "Administrateurs de conférence, agents de sécurité, participants (journalistes, missions, ingénieurs…).",
+      "Administrateurs de la conférence, agents de sécurité et participants aux profils variés : journalistes, chargés de mission, ingénieurs et autres intervenants.",
     impact:
-      "Application complète mobile + web déployée pour l’événement : badges QR par niveau et zone, monitoring des validations/échecs et mode offline 4h.",
+      "La solution couvre l’administration web des badges QR, le scan mobile sur le terrain, le suivi des entrées et les échecs de validation en temps réel, avec un mode hors ligne de 4h.",
     constraints:
-      "Continuité d’exploitation malgré l’instabilité réseau pendant la conférence.",
+      "Le système devait rester utilisable pendant la conférence même en cas d’indisponibilité temporaire du réseau.",
     contribution:
-      "Conception fonctionnelle et implémentation React Native / React / Node.js du contrôle d’accès pour la conférence ministérielle.",
+      "J’ai développé l’application mobile React Native, l’interface web React et le backend Node.js de gestion des accès.",
     stack: ["React Native", "React", "Node.js", "PostgreSQL", "SQLite"],
     challenges:
-      "Synchronisation des événements différés après période hors-ligne.",
+      "Le défi majeur était de gérer les validations hors ligne dans une file d’attente locale puis de les synchroniser proprement au retour de la connexion.",
     lessons:
-      "Une file d’attente locale fiable est essentielle pour les systèmes critiques terrain.",
+      "Pour un système événementiel critique, la continuité d’usage dépend autant du mode offline que de l’interface principale.",
   },
   {
     slug: "fydelys",
@@ -114,19 +114,19 @@ export const projects: ProjectNarrative[] = [
     category: "Fintech Métier",
     layout: "default",
     problem:
-      "Gérer fidélité, cartes prépayées, retraits comptables et personnalisation client.",
-    users: "Entreprises affiliées, équipes caisse/comptabilité, clients finaux.",
+      "Les entreprises avaient besoin d’une plateforme pour gérer cartes de fidélité, cartes de type débit, retraits comptables et personnalisation client.",
+    users: "Entreprises affiliées, équipes de caisse, comptables et clients finaux.",
     impact:
-      "Plateforme configurable par entreprise avec messages WhatsApp automatiques et recommandations IA. [À COMPLÉTER: adoption]",
+      "La plateforme centralise transactions, messages WhatsApp automatiques, calculs comptables de base et recommandations fondées sur les habitudes d’achat. [À COMPLÉTER: adoption]",
     constraints:
-      "Concevoir une base configurable sans modification de code pour chaque client.",
+      "Chaque entreprise devait pouvoir configurer son usage sans modification directe du code.",
     contribution:
-      "Architecture applicative et implémentation des modules transactionnels.",
+      "J’ai conçu l’architecture applicative et implémenté les modules liés aux transactions, à la configuration entreprise et aux notifications.",
     stack: ["React", "Node.js", "MongoDB", "WhatsApp"],
     challenges:
-      "Garantir cohérence comptable sur flux mixtes (clients/comptables).",
+      "Le défi était de maintenir une cohérence comptable sur des flux mêlant achats clients, retraits et mouvements de caisse.",
     lessons:
-      "La configurabilité produit doit être prévue dès le modèle de données.",
+      "La configurabilité métier doit être pensée dès le modèle de données pour éviter de multiplier les adaptations spécifiques.",
   },
   {
     slug: "invoicenet",
@@ -135,21 +135,21 @@ export const projects: ProjectNarrative[] = [
     layout: "default",
     confidential: true,
     confidentialReason:
-      "Module Odoo développé en contexte entreprise — règles de facturation, taxes et processus comptables internes non diffusables.",
+      "Module Odoo développé en contexte entreprise : règles de facturation, taxes et processus comptables internes ne peuvent pas être exposés publiquement.",
     problem:
-      "Automatiser la facturation et la logique comptable personnalisée dans Odoo.",
-    users: "Équipes comptables et administrateurs ERP.",
+      "L’entreprise devait automatiser une logique de facturation personnalisée directement dans son environnement Odoo.",
+    users: "Équipes comptables, administrateurs ERP et utilisateurs internes impliqués dans la facturation.",
     impact:
-      "Calcul automatique des taxes, remises et totaux dans un module Odoo custom.",
+      "Le module automatise les calculs de taxes, remises et totaux de factures selon des règles métier spécifiques.",
     constraints:
-      "Respecter les mécanismes Odoo tout en ajoutant des règles métier spécifiques.",
+      "Les extensions devaient rester alignées avec les mécanismes Odoo tout en intégrant les besoins comptables internes.",
     contribution:
-      "Développement du module et des règles de calcul de facturation.",
+      "J’ai développé le module Odoo en Python/XML et implémenté les règles de calcul liées à la facturation.",
     stack: ["Python", "XML", "Odoo"],
     challenges:
-      "Aligner logique métier client et extension propre de l’ERP.",
+      "Le principal enjeu était de traduire la logique comptable client sans fragiliser le fonctionnement natif de l’ERP.",
     lessons:
-      "Les modules ERP gagnent en stabilité avec des extensions limitées et testées.",
+      "Sur un ERP, une extension ciblée et bien isolée vaut mieux qu’une personnalisation trop large.",
   },
   {
     slug: "whatsllama",
@@ -157,19 +157,19 @@ export const projects: ProjectNarrative[] = [
     category: "IA Locale",
     layout: "default",
     problem:
-      "Automatiser des interactions WhatsApp Web avec un LLM local autonome.",
-    users: "Utilisateurs avancés souhaitant automatisation et confidentialité locale.",
+      "Le projet visait à automatiser des interactions WhatsApp Web à l’aide d’un LLM exécuté localement.",
+    users: "Utilisateurs avancés cherchant à automatiser WhatsApp Web tout en gardant le traitement IA en local.",
     impact:
-      "Extension pilotée par Phi-3 (Ollama) pour workflows conversationnels automatisés. [À COMPLÉTER: cas d’usage quantifiés]",
+      "L’extension de navigateur s’appuie sur Phi-3 via Ollama pour piloter des workflows conversationnels automatisés. [À COMPLÉTER: cas d’usage quantifiés]",
     constraints:
-      "Exécuter un LLM local avec intégration navigateur robuste.",
+      "L’intégration devait combiner exécution locale du modèle, contrôle du navigateur et stabilité sur WhatsApp Web.",
     contribution:
-      "Développement extension + orchestration IA locale.",
+      "J’ai développé l’extension et l’orchestration entre WhatsApp Web, le code navigateur et le LLM local.",
     stack: ["JavaScript", "Python", "Ollama", "HTML", "CSS"],
     challenges:
-      "Stabilité des interactions UI web et prompts contextuels persistants.",
+      "Le défi était de maintenir des interactions fiables avec une interface web évolutive tout en conservant un contexte utile pour le modèle.",
     lessons:
-      "L’IA locale apporte un compromis intéressant entre autonomie et privacy.",
+      "L’IA locale impose plus de contraintes d’intégration, mais donne un meilleur contrôle sur l’autonomie et la confidentialité.",
   },
   {
     slug: "pife",
@@ -177,19 +177,19 @@ export const projects: ProjectNarrative[] = [
     category: "Reconnaissance Faciale",
     layout: "default",
     problem:
-      "Retrouver une personne à partir d’une photo dans une base d’images volumineuse.",
-    users: "Opérateurs d’identification et équipes techniques.",
+      "Le projet devait permettre de retrouver une personne précise à partir d’une photo dans une base d’images.",
+    users: "Opérateurs d’identification et équipes techniques chargées de gérer les profils.",
     impact:
-      "Recherche faciale avec vecteurs (pgvector) et ajout simplifié de nouveaux profils.",
+      "La recherche faciale s’appuie sur des embeddings et pgvector, avec un ajout de profils à partir d’informations et de plusieurs photos lorsque possible.",
     constraints:
-      "Conserver précision de matching sur données hétérogènes.",
+      "Le système devait conserver une recherche pertinente malgré la variabilité des photos et des profils ajoutés.",
     contribution:
-      "Implémentation du backend API et pipeline de recherche vectorielle.",
+      "J’ai implémenté les API, le pipeline de reconnaissance faciale et la recherche vectorielle avec PostgreSQL/pgvector.",
     stack: ["FastAPI", "Flask", "ArcFace", "DeepFace", "PostgreSQL", "pgvector", "Vue.js", "Docker"],
     challenges:
-      "Optimisation de la recherche vectorielle et normalisation des embeddings.",
+      "Le défi portait sur la qualité des embeddings, leur normalisation et la rapidité de recherche dans la base.",
     lessons:
-      "La qualité des embeddings et du pré-traitement domine la performance finale.",
+      "En reconnaissance faciale, la performance finale dépend fortement de la préparation des images et de la qualité des vecteurs stockés.",
   },
   {
     slug: "kmerfoodlens",
@@ -197,20 +197,20 @@ export const projects: ProjectNarrative[] = [
     category: "IA Mobile",
     layout: "default",
     problem:
-      "Reconnaître des plats camerounais via IA sur application mobile.",
+      "Le projet répond au besoin de reconnaître des plats camerounais à partir d’images dans une application mobile.",
     users:
-      "Utilisateurs mobiles cherchant découverte culinaire et fonctionnalités sociales.",
+      "Utilisateurs mobiles intéressés par la découverte culinaire, les restaurants proches et les fonctionnalités sociales.",
     impact:
-      "Application conçue avec l’équipe TechaInova lors du hackathon CONIA — 4e place nationale. Prototype IA (dataset 9 classes) + social, géolocalisation restaurants, jeux et reconnaissance vocale. Projet en cours.",
+      "Conçue avec l’équipe TechaInova lors du hackathon CONIA, l’application a obtenu la 4e place nationale et combine IA sur 9 classes, social, jeux, restaurants proches et reconnaissance vocale.",
     constraints:
-      "Constituer un dataset local pertinent et maintenir la qualité de classification.",
+      "Le projet dépend d’un dataset local de plats camerounais suffisamment représentatif pour maintenir la qualité de classification.",
     contribution:
-      "Développement en équipe TechaInova (hackathon CONIA) côté application mobile React et backend IA Python.",
+      "J’ai contribué avec l’équipe TechaInova au développement mobile React, au backend Python et à l’intégration du modèle de reconnaissance.",
     stack: ["React", "Python", "Computer Vision"],
     challenges:
-      "Équilibrage dataset et robustesse des prédictions sur images terrain.",
+      "Le défi principal était d’équilibrer le dataset et de rendre les prédictions robustes sur des images prises en conditions réelles.",
     lessons:
-      "Le produit IA mobile doit itérer en continu avec des données utilisateurs réelles.",
+      "Un produit IA mobile progresse par itérations courtes entre expérience utilisateur, collecte de données et amélioration du modèle.",
   },
   {
     slug: "iot-faux-billet",
@@ -218,19 +218,19 @@ export const projects: ProjectNarrative[] = [
     category: "IoT",
     layout: "default",
     problem:
-      "Aider les personnes malvoyantes à détecter les faux billets rapidement.",
-    users: "Personnes malvoyantes et aidants.",
+      "Le projet visait à aider les personnes malvoyantes à identifier de faux billets avec un dispositif simple d’usage.",
+    users: "Personnes malvoyantes et personnes pouvant les assister au quotidien.",
     impact:
-      "Prototype hackathon combinant caméra embarquée et ESP32 pour assistance terrain.",
+      "Le prototype de hackathon associe une caméra embarquée et une carte ESP32 pour apporter une assistance directement sur le terrain.",
     constraints:
-      "Capacité de traitement limitée côté embarqué.",
+      "La solution devait composer avec les limites de calcul et d’intégration propres à l’embarqué.",
     contribution:
-      "Conception et prototypage du dispositif IoT + vision.",
+      "J’ai participé à la conception du dispositif et au prototypage de la partie IoT/vision.",
     stack: ["ESP32", "Computer Vision", "Embedded Camera"],
     challenges:
-      "Fiabiliser détection avec ressources matérielles contraintes.",
+      "Le défi était de rendre la détection exploitable malgré des ressources matérielles limitées.",
     lessons:
-      "L’accessibilité impose simplicité d’usage avant sophistication technique.",
+      "Pour un outil d’accessibilité, la simplicité d’usage doit guider les choix techniques dès le prototype.",
   },
   {
     slug: "women-in-ai-cm",
@@ -238,19 +238,19 @@ export const projects: ProjectNarrative[] = [
     category: "Web Platform",
     layout: "default",
     problem:
-      "Créer un site institutionnel complet, personnalisable et monétisable.",
+      "L’association Women in AI Cameroon avait besoin d’un site institutionnel complet, personnalisable et adapté à ses contenus.",
     users:
-      "Association Women in AI Cameroon, membres, visiteurs et donateurs.",
+      "Équipe de l’association, membres, visiteurs, apprenants et donateurs.",
     impact:
-      "Mise en ligne du site womeninaicameroon.org avec thème custom et WooCommerce.",
+      "Le site womeninaicameroon.org repose sur un thème WordPress sur mesure, avec WooCommerce pour les paiements et dons.",
     constraints:
-      "Éviter dépendance à un thème générique tout en gardant la maintenabilité WordPress.",
+      "Le thème devait être spécifique à l’association tout en restant modifiable comme un thème WordPress classique.",
     contribution:
-      "Conception du thème sur mesure, intégrations plugin et architecture contenu.",
+      "J’ai créé le thème personnalisé, structuré les contenus et intégré WooCommerce, FluentForms, The Events Calendar, LearnPress, ACF et CPT UI.",
     stack: ["WordPress", "PHP", "WooCommerce", "FluentForms", "ACF", "CPT UI"],
     challenges:
-      "Concilier personnalisation forte et administration simple pour l’équipe.",
+      "Le défi était de combiner une identité visuelle dédiée avec une administration simple pour l’équipe.",
     lessons:
-      "Un thème custom bien structuré reste modifiable comme un thème natif.",
+      "Un thème WordPress custom reste durable lorsqu’il respecte les conventions de la plateforme et les habitudes d’administration.",
   },
 ];

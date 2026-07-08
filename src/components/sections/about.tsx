@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionContainer } from "@/components/layout/section-container";
 import { profile } from "@/data/profile";
@@ -25,8 +26,16 @@ export function About() {
 
         <Reveal delay={0.1} className="lg:col-span-5">
           <div className="group relative aspect-[4/5] overflow-hidden border border-white/5 bg-surface transition-colors duration-700 hover:border-primary/50">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-surface-high to-background" />
-            <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80" />
+            <Image
+              src="/profile.png"
+              alt={`Portrait de ${profile.name}`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover object-center grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-[1.02]"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent mix-blend-overlay" />
+            <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent opacity-90" />
             <div className="absolute bottom-6 left-6 border-l-2 border-primary pl-4">
               <span className="block font-mono text-[10px] uppercase tracking-widest text-primary">
                 Focus actuel

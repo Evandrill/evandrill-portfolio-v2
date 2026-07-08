@@ -1,0 +1,21 @@
+ Le volume dans le lecteur E s'appelle Nouveau nom
+ Le num‚ro de s‚rie du volume est AA9B-803B
+
+ R‚pertoire de E:\Mes_Projets\bikele-portfolio\portfolio-web
+
+08/07/2026  10:29    <DIR>          .
+08/07/2026  10:25    <DIR>          ..
+08/07/2026  10:25               480 .gitignore
+08/07/2026  10:25               465 eslint.config.mjs
+08/07/2026  10:25               247 next-env.d.ts
+08/07/2026  10:25               133 next.config.ts
+08/07/2026  10:25               538 package.json
+08/07/2026  10:25                57 pnpm-workspace.yaml
+08/07/2026  10:25                94 postcss.config.mjs
+08/07/2026  10:25    <DIR>          public
+08/07/2026  10:25             1ÿ450 README.md
+08/07/2026  10:25    <DIR>          src
+08/07/2026  10:25               670 tsconfig.json
+08/07/2026  10:29                 0 _verify_out.txt
+              10 fichier(s)            4ÿ134 octets
+               4 R‚p(s)  32ÿ903ÿ421ÿ952 octets libres
